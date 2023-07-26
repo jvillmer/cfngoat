@@ -60,7 +60,7 @@ Resources:
         - Key: git_last_modified_by
           Value: mike@bridgecrew.io
         - Key: yor_trace
-          Value: d0c28b39-b842-4803-a7b8-a4ea8056eb99
+          Value: jvillmer
         - Key: git_org
           Value: bridgecrewio
         - Key: git_repo
@@ -84,6 +84,10 @@ Resources:
           Value: !Sub '${AWS::StackName}-VPC'
         - Key: yor_trace
           Value: e672877b-726b-4bb5-bb27-f7e8edb7613e
+        - Key: git_repo
+          Value: cfngoat
+        - Key: git_org
+          Value: jvillmer
   InternetGateway:
     Type: "AWS::EC2::InternetGateway"
     Properties:
@@ -92,6 +96,10 @@ Resources:
           Value: !Sub '${AWS::StackName}-Internet Gateway'
         - Key: yor_trace
           Value: c4e86b57-aa6a-4ff4-bef0-35905cc87db7
+        - Key: git_repo
+          Value: cfngoat
+        - Key: git_org
+          Value: jvillmer
   VPCGatewayAttachment:
     Type: "AWS::EC2::VPCGatewayAttachment"
     Properties:
@@ -108,6 +116,10 @@ Resources:
           Value: Public
         - Key: yor_trace
           Value: 99369f84-ea70-403b-91b1-1298c1d9b826
+        - Key: git_repo
+          Value: cfngoat
+        - Key: git_org
+          Value: jvillmer
   PrivateRouteTable01:
     Type: AWS::EC2::RouteTable
     Properties:
@@ -116,7 +128,7 @@ Resources:
         - Key: Name
           Value: Private Subnet AZ1
         - Key: Network
-          Value: Private01
+          Value: jvillmer
         - Key: git_org
           Value: bridgecrewio
         - Key: git_repo
@@ -155,7 +167,7 @@ Resources:
         - Key: git_last_modified_by
           Value: nimrodkor@gmail.com
         - Key: yor_trace
-          Value: 4e1da555-6cc5-42c8-a75f-6e8abd1cc1f1
+          Value: jvillmer
         - Key: git_org
           Value: bridgecrewio
   PublicRoute:
@@ -198,6 +210,10 @@ Resources:
           Value: !Sub '${AWS::StackName}-NatGatewayAZ1'
         - Key: yor_trace
           Value: 9a63423c-9c6e-4467-8a1e-b1fd9029281d
+        - Key: git_repo
+          Value: cfngoat
+        - Key: git_org
+          Value: jvillmer
   NatGateway02:
     DependsOn:
     - NatGatewayEIP2
@@ -223,7 +239,7 @@ Resources:
         - Key: git_last_modified_by
           Value: nimrodkor@gmail.com
         - Key: yor_trace
-          Value: fb5ac0c1-ebb5-48dd-beab-2f6658041e52
+          Value: jvillmer
         - Key: git_org
           Value: bridgecrewio
   NatGatewayEIP1:
@@ -244,7 +260,7 @@ Resources:
         - Key: git_last_modified_by
           Value: nimrodkor@gmail.com
         - Key: yor_trace
-          Value: 8627abe2-fcd0-47da-a257-3d190b4b4081
+          Value: jvillmer
         - Key: git_org
           Value: bridgecrewio
         - Key: git_repo
@@ -257,7 +273,7 @@ Resources:
       Domain: vpc
       Tags:
         - Key: git_org
-          Value: bridgecrewio
+          Value: jvillmer
         - Key: git_repo
           Value: cfngoat
         - Key: git_file
@@ -291,6 +307,10 @@ Resources:
           Value: !Sub "${AWS::StackName}-PublicSubnet01"
         - Key: yor_trace
           Value: 7c34a299-7166-44a5-8ce5-09c8c9beca84
+        - Key: git_org
+          Value: jvillmer
+        - Key: git_repo
+          Value: cfngoat
   PublicSubnet02:
     Type: AWS::EC2::Subnet
     Metadata:
@@ -307,7 +327,7 @@ Resources:
         Ref: VPC
       Tags:
         - Key: Name
-          Value: !Sub "${AWS::StackName}-PublicSubnet02"
+          Value: jvillmer
         - Key: git_org
           Value: bridgecrewio
         - Key: git_repo
@@ -348,7 +368,7 @@ Resources:
         - Key: git_last_modified_by
           Value: nimrodkor@gmail.com
         - Key: yor_trace
-          Value: f62acb0d-f3e7-4892-b4c1-dac384b433b1
+          Value: jvillmer
         - Key: git_org
           Value: bridgecrewio
         - Key: git_repo
@@ -389,7 +409,7 @@ Resources:
         - Key: git_last_modified_by
           Value: nimrodkor@gmail.com
         - Key: yor_trace
-          Value: 76d2fd72-a2b2-4576-885b-2cf64d6b1d31
+          Value: jvillmer
         - Key: git_org
           Value: bridgecrewio
         - Key: git_repo
@@ -421,7 +441,7 @@ Resources:
       VpcId: !Ref VPC
       Tags:
         - Key: yor_trace
-          Value: 01a28bb3-8cc4-497e-af24-f3c445a754ce
+          Value: jvillmer
         - Key: git_org
           Value: bridgecrewio
         - Key: git_repo
